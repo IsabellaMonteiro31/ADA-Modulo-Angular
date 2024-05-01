@@ -1,0 +1,49 @@
+<!-- <div class="first-div" *ngIf="itensList.length > 0; else emptyList">
+  <mat-card class="card-design" *ngFor="let item of itensList">
+    <div class="img-design">
+      <img class="img-size" [src]="item.image1" />
+    </div>
+
+    <mat-card-header>
+      <mat-card-title class="title-design">{{ item.name }}</mat-card-title>
+      <mat-card-subtitle class="subtitle-design">{{
+        item.movie
+      }}</mat-card-subtitle>
+
+      <mat-card-subtitle>
+        <app-rating-stars></app-rating-stars>
+      </mat-card-subtitle>
+
+      <mat-card-title class="price-design"> R$ {{ item.price }}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-actions>
+      <div class="bt-design">
+        <mat-icon
+          aria-hidden="false"
+          (click)="addToShoppingCart()"
+          fontIcon="shopping_cart"
+        ></mat-icon>
+        <mat-icon aria-hidden="false" fontIcon="favorite"></mat-icon>
+        <mat-icon aria-hidden="false" fontIcon="share"></mat-icon>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<ng-template #emptyList>
+  <p class="mensage">Em breve novos itens!</p>
+</ng-template> -->
+
+<app-main-page></app-main-page>
+
+<div class="first-div">
+  @for(item of itensList; track item.id){
+  <app-item-card [item]="item" (addItemToCart)="warnAboutAddItemToCart(item)"></app-item-card>
+
+  } @empty{
+  <p class="mensage">Em breve novos itens!</p>
+  }
+</div>
+
+<app-item-card></app-item-card>

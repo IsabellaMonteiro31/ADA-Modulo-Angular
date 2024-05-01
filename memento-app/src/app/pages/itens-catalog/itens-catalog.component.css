@@ -1,0 +1,109 @@
+mat-card{
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+mat-card-header {
+  margin: 0;
+  padding: 0px;
+}
+
+mat-card-actions {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+mat-icon {
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 0px 5px 0px;
+}
+
+.first-div {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+}
+
+.item{
+  padding: 2px;
+}
+
+.card-design {
+  max-width: 138px;
+  max-height: auto;
+  background-color: black;
+  margin: 12px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img-design {
+  width: 120px;
+  height: 100px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 0px;
+  margin-bottom: 3px;
+  padding: 4px;
+  text-align: center;
+}
+
+.img-size {
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 120px;
+  max-height: 100px;
+  object-fit: cover;
+  justify-self: center;
+}
+
+.title-design {
+  margin: 0 auto;
+  padding: 0px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+}
+
+.subtitle-design {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: left;
+}
+
+.price-design {
+  margin: 0 auto;
+  padding: 0px;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+}
+
+.bt-design {
+  min-width: 100px;
+  margin: 0 auto;
+  color: rgb(165, 23, 23);
+  text-align: center;
+  cursor: pointer;
+}
+
+.mensage {
+  padding: 12px;
+  text-align: center;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.309);
+  font-size: 30px;
+}

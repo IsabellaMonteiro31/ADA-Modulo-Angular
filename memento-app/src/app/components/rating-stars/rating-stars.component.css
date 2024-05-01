@@ -1,0 +1,10 @@
+.stars-size {
+  display: inline-block;
+  margin: 0;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: normal;
+  cursor: pointer;
+}
+

@@ -1,0 +1,6 @@
+<mat-icon
+  class="stars-size material-symbols-outlined"
+  *ngFor="let star of stars; let i = index"
+  (click)="rate(i)"
+  [style.color]="star ? 'rgb(255, 136, 0)' : 'white'"
+  >emoji_events</mat-icon>;

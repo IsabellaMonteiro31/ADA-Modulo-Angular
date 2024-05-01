@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+body {
+    width: 320px; /* largura desejada */
+    height: auto;
+    margin: 0 auto; /* centralizar a tela horizontalmente */
+  }
+
+  .material-symbols-outlined {
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-weight: 200;
+  }
+
+
+  .mat-mdc-form-field-subscript-wrapper{
+    max-height: 0px;
+  }
+  

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  width: 320px; /* largura desejada */
+  height: auto;
+  margin: 0 auto;
+}
+
+
+div span {
+  padding-left: 10px;
+  align-content: center;
+  color: white;
+  font-weight: 200;
+}
+
+.margin {
+  margin: 0 auto;
+  align-content: center;
+  background-color: black;
+  display: block;
+}
+
+.menu {
+  display: inline-flex;
+  margin: 14px;
+  line-height: 0px;
+}
+
+.icons {
+  align-content: center;
+  color: white;
+}
+
+.logo {
+  font-family: "Actor", "Montserrat", sans-serif;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+
+.announcement {
+  background-color: rgba(149, 80, 0, 1);
+  width: 320px;
+  height: 33px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 33px;
+  color: white;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+

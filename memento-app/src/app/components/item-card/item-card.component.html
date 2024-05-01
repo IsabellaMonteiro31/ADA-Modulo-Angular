@@ -1,0 +1,66 @@
+<div class="first-div">
+<mat-card class="card-design" *ngIf="item">
+  <div class="img-design">
+    <img class="img-size" [src]="item.image1" />
+    <!-- <img class="img-size" [src]="item?.image2" /> segunda imagem -->
+   </div> 
+
+  <mat-card-header>
+    <mat-card-title class="title-design">{{ item.name }}</mat-card-title>
+    <mat-card-subtitle class="subtitle-design">{{
+      item.movie
+    }}</mat-card-subtitle>
+
+    <mat-card-subtitle>
+      <app-rating-stars></app-rating-stars>
+    </mat-card-subtitle>
+
+    <mat-card-title class="price-design"> R$ {{ item.price }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-actions>
+    <div class="bt-design">
+      <mat-icon
+        aria-hidden="false"
+        (click)="addToShoppingCart()"
+        fontIcon="shopping_cart"
+      ></mat-icon>
+      <mat-icon aria-hidden="false" fontIcon="favorite"></mat-icon>
+      <mat-icon aria-hidden="false" fontIcon="share"></mat-icon>
+    </div>
+  </mat-card-actions>
+</mat-card> 
+</div>
+
+
+
+<!-- @if(item) {
+  <mat-card class="card-design">
+    <div class="img-design">
+      <img class="img-size" [src]="item.image1" />
+      <img class="img-size" [src]="item?.image2" /> segunda imagem
+    </div>
+  
+    <mat-card-header>
+      <mat-card-title class="title-design">{{ item.name }}</mat-card-title>
+      <mat-card-subtitle class="subtitle-design">{{
+        item.movie
+      }}</mat-card-subtitle>
+  
+      <mat-card-subtitle>
+        <app-rating-stars></app-rating-stars>
+      </mat-card-subtitle>
+  
+      <mat-card-title class="price-design"> R$ {{ item.price }}</mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-actions>
+      <div class="bt-design">
+        <mat-icon aria-hidden="false" fontIcon="shopping_cart"></mat-icon>
+        <mat-icon aria-hidden="false" fontIcon="favorite"></mat-icon>
+        <mat-icon aria-hidden="false" fontIcon="share"></mat-icon>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+  
+} -->

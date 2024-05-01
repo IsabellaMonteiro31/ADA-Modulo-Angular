@@ -1,0 +1,16 @@
+<mat-list>
+  @for(item of addedItensList; track item.id){
+  <mat-list-item>
+    <div>{{ item.name }} | {{ item.totalAddedToCart }}</div>
+
+    <button class="material-symbols-outlined" (click)="decrementTotalItensCopies(item)" >remove_shopping_cart</button>
+
+    <button class="material-symbols-outlined" (click)="incrementTotalItensCopies(item)" >add_shopping_cart  </button>
+
+  </mat-list-item>
+  <mat-divider></mat-divider>
+
+  } @empty{
+  <mat-list-item>Carrinho vazio!</mat-list-item>
+  }
+</mat-list>

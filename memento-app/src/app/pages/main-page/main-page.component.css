@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  width: 320px; /* largura desejada */
+  height: auto;
+  margin: 0 auto; /* centralizar a tela horizontalmente */
+}
+
+h1 {
+  color: rgba(149, 80, 0, 1);
+  font-size: 36px;
+  font-family: "Actor", sans-serif;
+  font-weight: normal;
+  margin: 0 auto;
+  line-height: 39px;
+  white-space: pre-line;
+  padding-bottom: 15px;
+}
+
+h2{
+  color: white;
+  font-size: 32px;
+  font-family: "Actor", sans-serif;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 69px;
+  padding-bottom: 32px;
+  background-color: black;
+}
+
+h5 {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: left;
+  font-size: 24px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: black;
+}
+
+.hi {
+  margin: 0 auto;
+  background-color: black;
+  height: auto;
+}
+
+.block-text {
+  margin: 0 auto;
+  background-color: rgba(70, 0, 0, 1);
+  padding: 20px 16px 0px 16px; /* cima, direita, baixo, esquerda */
+}
+
+.texto-hi {
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  line-height: 17px;
+  color: rgba(153, 113, 65, 1);
+}
+
+.black-bt {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  border-radius: 62px;
+  border-style: none;
+  padding: 16px 38px;
+  margin-top: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.number-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 480px;
+}
+
+.block-row {
+  width: 310px;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.block-date {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+
+.subtitle {
+  margin: 0 auto;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400px;
+  text-align: left;
+  padding: 0 auto;
+}
+
+#main-video {
+  margin: 0 auto;
+  width: 320px;
+  height: 448px;
+  object-fit: cover;
+  max-height: 100%;
+}
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  background-color: black;
+  padding: 22px 12px 0px 12px; /* cima, direita, baixo, esquerda */
+}
+
+.footer-itens-align {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+

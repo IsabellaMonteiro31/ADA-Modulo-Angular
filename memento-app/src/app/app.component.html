@@ -1,0 +1,24 @@
+<app-navigation-bar>
+  <button
+    type="button"
+    class="material-symbols-outlined"
+    mat-button
+    (click)="drawer.toggle()"
+  >
+    shopping_cart
+  </button>
+</app-navigation-bar>
+
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="over">
+    <app-itens-cart [itensList]="addedItensList"></app-itens-cart>
+  </mat-drawer>
+
+  <!-- <app-main-page></app-main-page> -->
+
+  <!-- <app-itens-catalog (addItemToCart)="addItemToCart($event)"></app-itens-catalog> -->
+
+  <router-outlet/>
+</mat-drawer-container>
+
+
