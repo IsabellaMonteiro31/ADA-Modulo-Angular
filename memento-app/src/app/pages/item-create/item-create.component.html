@@ -1,0 +1,143 @@
+<div>
+<!-- <mat-form-field>
+    <mat-label>Foto do Item</mat-label>
+    <div
+      class="fileUploadContainer"
+      [ngStyle]="{
+        'margin-top': editForm.get('photo')!.value ? '5px' : '20px'
+      }"
+    >
+      <ng-container *ngIf="editForm.get('photo')!.value">
+        <img [src]="editForm.get('photo')!.value" />
+
+        <button class="material-symbols-outlined">
+          mat-button (click)="fileInput.value = '';
+          editForm.get('photo')?.setValue(null);"> close
+        </button>
+      </ng-container> -->
+
+<!-- no image -->
+<!-- <div
+        *ngIf="!editForm.get('photo')!.value"
+        fxLayout="column"
+        fxLayoutAlign="center center"
+        fxLayoutGap="10px"
+      >
+        <mat-icon style="opacity: 60%">file_upload</mat-icon>
+        <button
+          mat-raised-button
+          color="primary"
+          style="width: 100%; opacity: 80%"
+        >
+          Browser
+        </button>
+        <small style="margin: 20px">Drag and drop here</small>
+      </div> -->
+
+<!-- put on top of the fileUploadContainer with opacity 0 -->
+<!-- <input
+        #fileInput
+        class="fileInput"
+        type="file"
+        multiple="multiple"
+        accept="image/*"
+        (change)="setFileData($event)"
+      />
+    </div>
+    <input matInput formControlName="photo" readonly [hidden]="true" />
+  </mat-form-field>
+</div> -->
+
+
+
+<form>
+  <h1>
+    Cadastro de Itens:
+  </h1>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Imagem do Item - 1</mat-label>
+      <input matInput name="image1" [(ngModel)]="newItem.image1" />
+    </mat-form-field>
+  </div>
+
+  <!-- <div id="image2">
+    <mat-form-field>
+      <mat-label>Imagem do Item - 2</mat-label>
+      <input matInput name="image2"/>
+    </mat-form-field>
+  </div> -->
+
+  <div>
+    <mat-form-field>
+      <mat-label>Nome do Item</mat-label>
+      <!-- <input matInput name="name" [value]="newItem.name" (input)="changeNameValue($event)"/> -->
+      <input matInput name="name" [(ngModel)]="newItem.name" />
+      <!-- <input matInput formControlName="name" /> -->
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Nome do Filme</mat-label>
+      <input matInput name="movie" [(ngModel)]="newItem.movie" />
+      <!-- <input matInput formControlName="movie" /> -->
+    </mat-form-field>
+  </div>
+
+  <!-- <div id="Gender">
+    <mat-form-field>
+      <mat-label>Gênero</mat-label>
+      <mat-select>
+        <mat-option value="Ação">Ação</mat-option>
+        <mat-option value="Aventura">Aventura</mat-option>
+        <mat-option value="Comédia">Comédia</mat-option>
+        <mat-option value="Comédia Romântica">Comédia Romântica</mat-option>
+        <mat-option value="Drama">Drama</mat-option>
+        <mat-option value="Ficção">Ficção</mat-option>
+        <mat-option value="Suspense">Suspense</mat-option>
+        <mat-option value="Terror">Terror</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div> -->
+
+  <div>
+    <mat-form-field>
+      <mat-label>Descrição</mat-label>
+      <textarea matInput name="description" [(ngModel)]="newItem.description"></textarea>
+      <!-- <textarea matInput formControlName="description"></textarea> -->
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field floatLabel="always">
+      <mat-label>Preço</mat-label>
+      <input matInput name="price" [(ngModel)]="newItem.price"
+        matInput
+        type="number"
+        class="example-right-align"
+        placeholder="0"
+      />
+      <span matTextPrefix>R$&nbsp;</span>
+      <span matTextSuffix>,00</span>
+    </mat-form-field>
+  </div>
+
+  <!-- <mat-form-field>
+    <mat-label>Desconto</mat-label>
+    <input matInput name="discount" [(ngModel)]="newItem.discount" />
+        <input matInput formControlName="discount"/>
+  </mat-form-field>
+</div> -->
+
+  <div>
+    <mat-form-field>
+      <mat-label>Estoque</mat-label>
+      <input type="number" matInput name="stock" [(ngModel)]="newItem.stock" />
+      <!-- <input type="number" matInput formControlName="stock" /> -->
+    </mat-form-field>
+  </div>
+
+  <button mat-flat-button color="primary" (click)="submitForm()">Enviar</button>
+</form>
